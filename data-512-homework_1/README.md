@@ -26,6 +26,23 @@ List of Dinosaur Articles: data/dinosaur_genera.cleaned.SEPT.2022.csv
 
 ### Output Files
 
+└── data-512-homework_1
+    ├── README.md
+    ├── data
+    │   ├── dino_monthly_cumulative_201507-202209.json
+    │   ├── dino_monthly_desktop_201507-202209.json
+    │   ├── dino_monthly_mobile_201507-202209.json
+    │   ├── dinosaur_genera.cleaned.SEPT.2022.csv
+    │   └── pageview_download.json
+    ├── results
+    │   ├── Fewest_months_plot.png
+    │   ├── Max_Min_Average_plot.png
+    │   └── Top_10_Peak_Page_Views_plot.png
+    └── src
+        ├── data_prep.ipynb
+        └── dino_analysis.ipynb
+
+
 **JSON Files**
 - data/dino_monthly_cumulative_201507-202209.json
 - data/dino_monthly_mobile_201507-202209.json
