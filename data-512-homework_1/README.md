@@ -8,17 +8,18 @@
 
 The goal of this assignment is to construct, analyze, and publish a dataset of monthly article traffic for a select set of pages from English Wikipedia from January 1, 2015 through September 30, 2022.
 
-### Library installation required
- - pandas
- - tqdm
- - seaborn
-
 
 Data Source: [Wikipedia REST API Endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews%20data/get_metrics_pageviews_per_article__project___access___agent___article___granularity___start___end_), licensed under the [CC-BY-SA 3.0]( CC-BY-SA 3.0 and GFDL licenses) and [GFDL licenses]( CC-BY-SA 3.0 and GFDL licenses).
 
 Data Documentation: [Pageviews API Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 
 Data Terms of Use: [Wikimedia Foundation REST API terms of use](https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions)
+
+### Library installation required
+ - pandas
+ - tqdm
+ - seaborn
+
 
 ### Input Data Files
 List of Dinosaur Articles: data/dinosaur_genera.cleaned.SEPT.2022.csv
