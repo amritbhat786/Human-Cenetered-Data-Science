@@ -1,4 +1,4 @@
-# Professionalism & Reproducibility
+# Considering Bias in Data
 
 **DATA 512: Human-Centered Data Science**
 
@@ -6,10 +6,31 @@
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/amritbhat786/Human-Cenetered-Data-Science/blob/main/LICENSE)
 
-The goal of this assignment is to construct, analyze, and publish a dataset of monthly article traffic for a select set of pages from English Wikipedia from January 1, 2015 through September 30, 2022.
+The goal of this assignment is to explore how bias can show up in data using Wikipedia articles. This assignment will consider articles on political figures from different countries.
 
+Data Source:
+- [Category:Politicians by nationality](https://en.wikipedia.org/w/index.php?title=Category:Politicians_by_nationality&subcatfrom=South+Sudanese+politicians#mw-subcategories).
+- [World Population Data Sheet](https://www.prb.org/international/indicator/population/table)
 
-Data Source: [Wikipedia REST API Endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews%20data/get_metrics_pageviews_per_article__project___access___agent___article___granularity___start___end_), licensed under the [CC-BY-SA 3.0]( CC-BY-SA 3.0 and GFDL licenses) and [GFDL licenses]( CC-BY-SA 3.0 and GFDL licenses).
+WikiMedia API:
+- Documentation: [API:Info](https://www.mediawiki.org/wiki/API:Info)
+- License: [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/)
+
+ORES API:
+- Documentation: [ORES](https://www.mediawiki.org/wiki/ORES)
+- License: [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/)
+
+### Input Data Files
+- data/politicians_by_country_SEPT.2022.csv
+  - Politicians and their associated country.
+- data/population_by_country_2022.csv
+  - Countries and their population in millions.
+
+### Output Files
+- data/wp_countries-no_match.txt
+  - List of all countries for which there are no matches between politician and population data.
+- data/wp_politicians_by_country.csv
+  - Consolidated data of politician articles, their countries and region, the respective country population and article quality.
 
 Data Documentation: [Pageviews API Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 
